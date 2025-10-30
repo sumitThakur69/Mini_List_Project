@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Alternative dark mode syntax for Tailwind v4 */
+@media (prefers-color-scheme: dark) {
+  :root.dark {
+    color-scheme: dark;
+  }
+}

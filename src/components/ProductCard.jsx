@@ -51,8 +51,7 @@ const ProductCard = ({ product, viewMode = "grid", isDark }) => {
         style={cardStyle}
       >
         <div
-          className="h-64 flex items-center justify-center p-4"
-          style={{ backgroundColor: isDark ? "#374151" : "#f3f4f6" }}
+          className="h-64 flex items-center justify-center p-4 bg-white"
         >
           <img
             src={product.image}
@@ -98,8 +97,7 @@ const ProductCard = ({ product, viewMode = "grid", isDark }) => {
       style={cardStyle}
     >
       <div
-        className="w-full sm:w-48 h-48 flex items-center justify-center p-4"
-        style={{ backgroundColor: isDark ? "#374151" : "#f3f4f6" }}
+        className="w-full sm:w-48 h-48 flex items-center justify-center p-4 bg-white"
       >
         <img
           src={product.image}

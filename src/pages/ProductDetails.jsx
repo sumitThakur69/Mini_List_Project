@@ -9,7 +9,7 @@ const ProductDetails = () => {
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // 🌙 Dark mode setup
+  //  Dark mode setup
   const [isDark, setIsDark] = useState(() => localStorage.getItem("darkMode") === "true");
   const toggleDark = () => {
     const next = !isDark;
@@ -97,9 +97,9 @@ const ProductDetails = () => {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto p-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <main className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 px-4 md:px-8 py-10">
         {/* Image */}
-        <div className={`h-100 rounded-xl p-6 flex justify-center items-center border shadow-sm ${box}`}>
+        <div className={`h-100 rounded-xl p-6 flex justify-center items-center border shadow-sm bg-white`}>
           <img
             src={product.image}
             alt={product.title}
@@ -145,9 +145,9 @@ const ProductDetails = () => {
                   </button>
                 </div>
               </div>
-              <div className="text-right">
+              <div className="text-right flex flex-col justify-center">
                 <p className="text-sm">In Stock</p>
-                <p className="text-xl font-semibold">15 available</p>
+                <p className="text-xl font-semibold leading-tight">15 available</p>
               </div>
             </div>
 

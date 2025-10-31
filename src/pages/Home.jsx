@@ -106,7 +106,7 @@ const Home = ({ isDark, toggleDarkMode }) => {
     " style={{ backgroundColor: isDark ? '#111827' : '#ffffff', color: isDark ? '#ffffff' : '#111827' }}>
       <Navbar onSearch={handleSearch} searchQuery={searchQuery} isDark={isDark} toggleDarkMode={toggleDarkMode} />
 
-      <main className="flex p-4 container mx-auto px-4 py-8">
+      <main className="flex p-4 max-w-[1680px] mx-auto px-4 py-8">
         <div className="flex flex-col lg:flex-row gap-6">
           {/* Sidebar */}
           <aside className="lg:w-64 flex h-60">

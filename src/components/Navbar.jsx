@@ -54,7 +54,7 @@ const Navbar = ({ onSearch, searchQuery, isDark, toggleDarkMode }) => {
     {/* Dark mode toggle */}
     <button
       onClick={toggleDarkMode}
-      className="p-2.5 rounded-lg border transition-all duration-200 hover:scale-105 flex-shrink-0"
+      className="p-2.5 rounded-lg border transition-all duration-200 hover:scale-105 flex-0"
       style={{
         backgroundColor: isDark ? '#1f2937' : '#ffffff',
         borderColor: isDark ? '#4b5563' : '#d1d5db',
